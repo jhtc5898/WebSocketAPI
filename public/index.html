@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Websockets</title>
+    
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <h1>Websockets</h1>
+    <div id="producto">
+        <h2>Formulario representante Legal</h2>
+
+        <label>RUC:</label>
+        <input type="text" id="ruc" value="" placeholder="0105598254001" />
+        <label>Cedula:</label>
+        <input type="text" id="cedula" value="" placeholder="0105598254" />
+        <label>Nombre:</label>
+        <input type="text" id="nombre" value="" placeholder="John" />
+        <label>Apellido:</label>
+        <input type="text" id="apellido" value="" placeholder="Tenesaca" />
+        <label>Email:</label>
+        <input type="text" id="email" value="" placeholder="johnecu15@gmail.com" />
+        <label>Domicilio:</label>
+        <input type="text" id="domicilio" value="" placeholder="Cuenca Baños" />
+        <label>Telefono: </label>
+        <input type="text" id="telefono" value=""  placeholder="0101201248" />
+        <label for="empresaSelect">Empresa:</label>
+        <div class="nuevo">
+            <select id="empresaSelect" multiple></select>
+            <button style="background-color: green; " onclick="window.location.href = 'nuevaempresa.html';">Agregar empresa</button>
+        </div>
+        <button style="background-color: green; "onclick="guardar_representante()">Guardar</button>
+        <button style="background-color: red;" onclick="cancelar_representante()">Cancelar</button>
+    </div>
+</body>
+
+</html>
